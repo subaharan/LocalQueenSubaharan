@@ -5,7 +5,6 @@ import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-
 import java.util.List;
 
 public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewHolders> {
@@ -28,6 +27,7 @@ public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewHolder
 
     @Override
     public void onBindViewHolder(RecyclerViewHolders holder, int position) {
+        if(position==6)
         holder.card_view.getBackground().setAlpha(45);
 //        holder.countryName.setText(itemList.get(position).getName());
         holder.countryPhoto.setImageResource(itemList.get(position).getPhoto());
