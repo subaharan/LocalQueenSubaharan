@@ -27,10 +27,15 @@ public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewHolder
 
     @Override
     public void onBindViewHolder(RecyclerViewHolders holder, int position) {
-        if(position==6)
-        holder.card_view.getBackground().setAlpha(45);
+        if(position==5) {
+            holder.card_view.getBackground().setAlpha(45);
+            holder.countryPhoto.setBackgroundResource(R.drawable.ic_shopping_cart_black_24dp);
+            holder.view2.setVisibility(View.VISIBLE);
+
+        }else {
 //        holder.countryName.setText(itemList.get(position).getName());
-        holder.countryPhoto.setImageResource(itemList.get(position).getPhoto());
+            holder.countryPhoto.setImageResource(itemList.get(position).getPhoto());
+        }
     }
 
     @Override

@@ -16,21 +16,25 @@
         <ImageView
             android:id="@+id/country_photo"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="match_parent"
             android:contentDescription="@string/action_settings"
-            android:src="@drawable/three"
+
             android:adjustViewBounds="true"
-            android:scaleType="centerCrop"
+            android:scaleType="fitXY"
             />
 
-        <View android:adjustViewBounds="true"
+        <TextView android:adjustViewBounds="true"
             android:scaleType="centerCrop"
-
+android:text="45+"
+            android:textSize="15sp"
+            android:gravity="center"
+            android:textColor="#fff"
             android:background="#90000000"
             android:id="@+id/view2"
+            android:visibility="gone"
             android:contentDescription="@string/action_settings"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="match_parent"
             android:layout_alignBottom="@+id/country_photo" />
     </RelativeLayout>
 

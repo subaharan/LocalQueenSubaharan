@@ -9,7 +9,7 @@ import android.widget.Toast;
 
 public class RecyclerViewHolders extends RecyclerView.ViewHolder implements View.OnClickListener{
 
-    public TextView countryName;
+    public TextView view2;
     public ImageView countryPhoto;
     public CardView card_view;
 
@@ -19,6 +19,7 @@ public class RecyclerViewHolders extends RecyclerView.ViewHolder implements View
 //        countryName = (TextView)itemView.findViewById(R.id.country_name);
         countryPhoto = (ImageView)itemView.findViewById(R.id.country_photo);
         card_view=(CardView)itemView.findViewById(R.id.card_view);
+        view2=(TextView)itemView.findViewById(R.id.view2);
     }
 
     @Override
